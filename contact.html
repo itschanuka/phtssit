@@ -1,21 +1,48 @@
-<!doctype html>
-<html>
-  <title>Contact</title>
-<head>Contact ME 
-<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Chanuka</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" />
 </head>
+<body>
+
+  <header>
+    <h1>Chanuka Keerthisingha</h1>
+    <p>Software Engineering Student | Web & App Developer</p>
+  </header>
+
   <nav>
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
-    <a href="Contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
-  <body>
-    <form action="index.php" method="post" style="background-color:tomato; border:2px solid-black; padding: 30px;">
-      <div class="input-group">
-      <label for = "name" >Name</label>
-      <input type="text" id="name" placeholder="Enter Your Name here" required>
-      </div>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work together or just say hi, feel free to reach out!</p>
+
+    <form action="submit_contact.php" method="POST" class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..." required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email..." required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
     </form>
-  </body>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chanuka Keerthisingha. All rights reserved.</p>
+    <p>Email: itschanuka@gmail.com | GitHub: github.com/itschanuka</p>
+  </footer>
+
+</body>
 </html>
