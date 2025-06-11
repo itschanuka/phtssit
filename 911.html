@@ -1,45 +1,58 @@
-<!-- https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28141216/Homepage-Design-Suicide-Prevention-Hotline.png -->
-
 <!doctype html>
 <html>
   <head>
-    <title>
-      Call us now | 911
-    </title>
+    <title>Call us now | 911</title>
     <link rel="stylesheet" href="911.css">
     <style>
-      body{
-      font-family: arial;
+      body {
+        font-family: Arial, sans-serif;
       }
-      #navigation{
-      background-color: lightblue;
-      font-size: 1em;
-      font-weight: bold;
-      padding:10px;
+
+      #navigation {
+        background-color: lightblue;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px;
       }
-      .top-bar{
-      background-color: lightblue;
-      font-weight:bold;
-      font-size: 1em;
-      text-aling: center;
+
+      #top-bar {
+        background-color: lightblue;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        padding: 12px;
+      }
+
+      .buttonset1 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .buttonset1 button {
+        padding: 10px 20px;
+        font-size: 1em;
       }
     </style>
   </head>
   <body>
     <div id="top-bar">
-      call us if You have any Emergency! 24/7 Sevice!!!
+      Call us if you have any Emergency! 24/7 Service!!!
     </div>
+
     <div id="navigation"> 
-    <a href="#1">Call</a>
-     <a href="#2">Text</a>
+      <a href="#1">Call</a>
+      <a href="#2">Text</a>
       <a href="#3">Chat</a>
       <a href="#4">Deaf</a>
     </div>
-    <container class="butonset1">
-        <button type="submit">Mail</button>
-        <button type="submit">Call</button>
-        <button type="submit">Medical</button>
-        <button type="submit">Freeze</button>
-    </container>
+
+    <div class="buttonset1">
+      <button type="submit">Mail</button>
+      <button type="submit">Call</button>
+      <button type="submit">Medical</button>
+      <button type="submit">Freeze</button>
+    </div>
   </body>
 </html>
